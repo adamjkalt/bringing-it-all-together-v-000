@@ -91,8 +91,8 @@ def self.find_or_create_by(name:, breed:)
       WHERE name = ?, breed = ?
       LIMIT 1
     SQL
-    DB[:conn].execute(sql, name, breed).map do |row|
-      self.new_from_db(row)
+    test = DB[:conn].execute(sql, name, breed).map do |row|
+     self.new_from_db(row)
     end.first
     binding.pry
 end
