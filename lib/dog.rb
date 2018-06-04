@@ -99,7 +99,7 @@ def self.find_or_create_by(name:, breed:)
       dog_info
     else
       self.create (name:, breed:)
-
+    end
 end
 
 end
