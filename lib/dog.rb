@@ -94,6 +94,7 @@ def self.find_or_create_by(name:, breed:)
     DB[:conn].execute(sql, name, breed).map do |row|
       self.new_from_db(row)
     end.first
+    binding.pry
 end
 
 end
