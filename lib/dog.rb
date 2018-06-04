@@ -95,6 +95,9 @@ def self.find_or_create_by(name:, breed:)
      self.new_from_db(row)
     end.first
     binding.pry
+    if dog_info
+      dog_info
+      
 end
 
 end
