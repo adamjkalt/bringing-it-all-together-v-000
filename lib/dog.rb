@@ -97,7 +97,9 @@ def self.find_or_create_by(name:, breed:)
     binding.pry
     if dog_info
       dog_info
-      
+    else
+      self.create (name:, breed:)
+
 end
 
 end
