@@ -97,7 +97,7 @@ def self.find_or_create_by(name:, breed:)
     if dog_info
       dog_info
     else
-      self.create(name, breed)
+      self.create(name: name, breed: breed)
     end
 end
 
