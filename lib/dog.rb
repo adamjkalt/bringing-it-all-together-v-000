@@ -98,7 +98,7 @@ def self.find_or_create_by(name:, breed:)
       dog_info
     else
       binding.pry
-      # self.create (:name, :breed)
+      # self.create (name, breed)
     end
 end
 
